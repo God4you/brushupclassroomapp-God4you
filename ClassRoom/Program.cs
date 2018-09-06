@@ -28,9 +28,10 @@ namespace ClassRoom
 
 
 
-            foreach (Studerende elever in kr.KlasseListe)
+            foreach (Studerende elev in kr.KlasseListe)
             {
-                Console.WriteLine(elever);
+                Console.WriteLine(elev);
+                
             }
 
             Console.ReadKey();
