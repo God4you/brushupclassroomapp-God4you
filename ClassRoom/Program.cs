@@ -33,7 +33,7 @@ namespace ClassRoom
                 Console.WriteLine(elev);
                 
             }
-
+            kr.AntalFødselsdag();
             Console.ReadKey();
         }
 
