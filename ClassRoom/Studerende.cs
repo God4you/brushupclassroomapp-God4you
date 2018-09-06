@@ -8,8 +8,25 @@ namespace ClassRoom
 {
     class Studerende
     {
+        private int _fødselsmåned;
         public String Navn { get; set; }
-        public int Fødselsmåned { get; set; }
+
+        public int Fødselsmåned
+        {
+            get => _fødselsmåned;
+            set
+            {
+                if (value >= 1 && value <= 12)
+                {
+                    _fødselsmåned = value;
+                }
+                else
+                {
+                    throw new Exception("Der er kun 12 måneder");
+                }
+            }
+        }
+
         public int Fødselsdag { get; set; }
 
         public Studerende(string navn, int fødselsmåned, int fødselsdag)
